@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sucursales, ubicación, teléfono y formulario de contacto de La Casa del Toldo.">
+    <title>Contacto | La Casa del Toldo</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Logotipo de La Casa del Toldo" width="281" height="125"></a>
+        <h1>Almacenes La Casa del Toldo</h1>
+        <p><em>¡Los mejores productos al mejor precio!</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Contacto</h2>
+
+        <section>
+            <h3>Sucursales</h3>
+            <table>
+                <caption>Direcciones y teléfono de atención</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Sucursal</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Teléfono / WhatsApp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Matriz</th>
+                        <td>Calle 508 y Peatonal 3 de Julio, Santo Domingo</td>
+                        <td rowspan="3"><a href="tel:+593999944992">099 994 4992</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">29 de Mayo</th>
+                        <td>Avenida 29 de Mayo, Santo Domingo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Redondel del Indio Colorado</th>
+                        <td>Vía principal, Redondel del Indio Colorado, Santo Domingo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Ubicación</h3>
+            <h4>Matriz</h4>
+            <iframe src="https://maps.google.com/maps?q=Calle+508+y+Peatonal+3+de+Julio,+Santo+Domingo,+Ecuador&amp;output=embed" width="400" height="300" title="Mapa de la matriz de La Casa del Toldo" loading="lazy"></iframe>
+            <h4>Sucursal 29 de Mayo</h4>
+            <iframe src="https://maps.google.com/maps?q=Avenida+29+de+Mayo,+Santo+Domingo,+Ecuador&amp;output=embed" width="400" height="300" title="Mapa de la sucursal 29 de Mayo" loading="lazy"></iframe>
+            <h4>Sucursal Redondel del Indio Colorado</h4>
+            <iframe src="https://maps.google.com/maps?q=Redondel+del+Indio+Colorado,+Santo+Domingo,+Ecuador&amp;output=embed" width="400" height="300" title="Mapa de la sucursal Redondel del Indio Colorado" loading="lazy"></iframe>
+        </section>
+
+        <section>
+            <h3>Escríbenos</h3>
+            <p>Atención inmediata por <a href="https://wa.me/593999944992" target="_blank" rel="noopener">WhatsApp</a>, o déjanos tu mensaje:</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono" placeholder="0991234567">
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tu consulta</legend>
+                    <p>
+                        <label for="sucursal">Sucursal de preferencia:</label><br>
+                        <select id="sucursal" name="sucursal">
+                            <option value="matriz">Matriz</option>
+                            <option value="29-de-mayo">29 de Mayo</option>
+                            <option value="indio-colorado">Redondel del Indio Colorado</option>
+                        </select>
+                    </p>
+                    <p>Tipo de compra:</p>
+                    <p>
+                        <input type="radio" id="menor" name="tipo" value="menor" checked>
+                        <label for="menor">Al por menor</label>
+                        <input type="radio" id="mayor" name="tipo" value="mayor">
+                        <label for="mayor">Al por mayor</label>
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="envio" name="envio" value="si">
+                        <label for="envio">Necesito envío a otra ciudad</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>Síguenos:
+            <a href="https://www.tiktok.com/@lacasadeltoldo.ec" target="_blank" rel="noopener">TikTok</a> |
+            <a href="https://wa.me/593999944992" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+        <address>Matriz: Calle 508 y Peatonal 3 de Julio, Santo Domingo, Ecuador · Teléfono: <a href="tel:+593999944992">099 994 4992</a></address>
+        <p><small>&copy; 2026 La Casa del Toldo. Imágenes: La Casa del Toldo.</small></p>
+        <p><small>Proyecto académico de Fundamentos de Sistemas Web — ESPE Santo Domingo. Autores: Manfred Armijos y Kevin Párraga.</small></p>
+    </footer>
+</body>
+</html>
